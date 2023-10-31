@@ -5,6 +5,6 @@ n = number % 10
 if n > 5:
     print("Last digit of {0} is {1} and is greater than 5".format(number,n))
 elif n == 0:
-    print("Last digit of {0} is {1} and is zero".format(number,n))
+    print("Last digit of {0} is {1} and is 0".format(number,n))
 else:
     print("Last digit of {0} is {1} and is less than 6 and not 0".format(number,n))
