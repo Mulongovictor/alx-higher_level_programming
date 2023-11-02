@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-def to_uper(character):
-    if ord(character) >= 97 and ord(character) <= 122:
-        return (ord(character) - 32)
+def is_lowerletter(c):
+    if (c >= 'a' and c <= 'z'):
+        return (chr(ord(c) - 32))
     else:
-        return ord(character)
+        return (chr(ord(c)))
 
 
 def uppercase(str):
-    new = ""
+    str1 = ""
     for character in str:
-        new += "%c" % to_uper(character)
-    print("{:s}".format(new))
+        str1 = is_lowerletter(character)
+        print("{}".format(str1), end="")
+    print(end="\n")
