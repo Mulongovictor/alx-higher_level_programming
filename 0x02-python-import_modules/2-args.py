@@ -10,5 +10,5 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(arg_count))
 
-    for i, arg in enumerate(sys.argv[1:]):
-        print("{}: {}".format(i, arg))
+    for i in (arg_count):
+        print("{}: {}".format(i + 1, arg + 1))
