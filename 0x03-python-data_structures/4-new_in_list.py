@@ -7,6 +7,5 @@ def new_in_list(my_list, idx, element):
     elif idx > idx_count - 1:
         return (new_list)
     else:
-        for idx in range(idx_count - 1):
-            new_list[idx] = element
+        new_list[idx] = element
             return (new_list)
