@@ -2,9 +2,9 @@
 def multiple_returns(sentence):
     t = ()
     length = len(sentence)
-    if sentence == "": 
+    if sentence == "":
         return (0, None)
     else:
         chara = sentence[0]
-    t  = length, chara
+    t = length, chara
     return (t)
