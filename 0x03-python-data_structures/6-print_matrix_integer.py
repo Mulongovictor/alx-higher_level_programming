@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     height = len(matrix)
-    for i in range(height - 1):
+    for i in range(height):
         width = len(matrix[i])
-        for j in range(width - 1):
+        for j in range(width):
             print("{}".format(matrix[i][j]), end="")
             if (j != width - 1):
-                print(end=" ")
-            else: 
-                print()
+                print(" ", end="")
+        print("")
