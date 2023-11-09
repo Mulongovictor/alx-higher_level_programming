@@ -5,8 +5,8 @@ def new_in_list(my_list, idx, element):
     if idx < 0:
         return (my_list)
     elif idx > idx_count - 1:
-        return (new_list)
+        return (my_list)
     else:
         new_list[idx] = element
-        for idx in range(idx_count - 1):
+        for i in new_list:
             return (new_list)
