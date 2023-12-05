@@ -5,6 +5,7 @@ Contains function that writes to text file and returns num chars written
 """
 
 
+
 def write_file(filename="", text=""):
     """writes to text file and returns num chars written
     Args:
