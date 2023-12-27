@@ -20,11 +20,13 @@ def pascal_triangle(n):
     """
     if n <= 0:
         return []
-    if n == 1:
-        return [[1]]
 
-    triangle = [[1]]
-    for rows in range(n-1):
-        triangle.append([a+b for a, b
-            in zip([0] + triangle[-1], triangle[-1] + [0])])
-        return triangle
+    triangles = [[1]]
+    while len(triangles) != n:
+        tri = triangles[-1]
+        tmp = [1]
+        for i in range(len(tri) - 1):
+            tmp.append(tri[i] + tri[i + 1])
+        tmp.append(1)
+        triangles.append(tmp)
+    return
